@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-text: #141414;
+  --light-text: #ffffff;
+  --grey-text: #505050;
+}
+
+body {
+  background-color: grey;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: var(--dark-text);
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  background-color: var(--light-text);
+}
+/* Header styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25em;
+  height: 4em;
+}
+
+.nav-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.94rem;
+  text-decoration: none;
+  margin-left: 1.5em;
+  cursor: pointer;
+  color: var(--dark-text);
+}
+
+/* hero section */
+
+.hero-post {
+  height: 295px;
+  background-image: url(/images/blog-image-hero.png);
+  background-size: cover;
+  color: var(--light-text);
+  padding: 5.3125em 1.25em 1.25em 1.25em;
+}
+
+.hero-date {
+  font-size: 0.75rem;
+  line-height: 0.94em;
+  margin-bottom: 0.5em;
+}
+
+.hero-heading {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.09375em;
+  margin-bottom: 0.25em;
+}
+
+.hero-text {
+  line-height: 1.25em;
+}
+
+/* Articles section */
+
+.blog-articles {
+  padding: 34px 20px;
+}
+
+.blog {
+}
+
+.blog img {
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+.article-date {
+  font-size: 0.875rem;
+  line-height: 1.125em;
+  margin-bottom: 0.65em;
+}
+
+.article-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.375em;
+  line-height: 1.08em;
+}
+
+.article-intro {
+  color: var(--grey-text);
+  margin-bottom: 2.5em;
+  line-height: 1.25em;
+}
+
+/* Hidden articles */
+#blog-4,
+#blog-5,
+#blog-6 {
+  display: none;
+}
+
+/* View more button to show more articles */
+
+.view-more-btn {
+  color: var(--dark-text);
+  font-weight: 700;
+  line-height: 1.25em;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Footer section */
+footer {
+  height: 105px;
+  background-color: var(--dark-text);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-header {
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.08em;
+}
+
+.copyright {
+  font-size: 0.75em;
+  line-height: 1.25em;
+}
+
+/* Media queries */
