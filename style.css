@@ -108,21 +108,23 @@ header {
 }
 
 /* Hidden articles */
-#blog-4,
-#blog-5,
-#blog-6 {
+.initially-hidden {
   display: none;
 }
 
-/* View more button to show more articles */
+/* View more/less buttons to show/hide articles */
 
-.view-more-btn {
+.more-less-btns {
   color: var(--dark-text);
   font-weight: 700;
   line-height: 1.25em;
   display: block;
   text-align: center;
   cursor: pointer;
+}
+
+#view-less-btn {
+  display: none;
 }
 
 /* Footer section */
