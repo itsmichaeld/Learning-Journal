@@ -77,7 +77,7 @@ header {
 /* Articles section */
 
 .blog-articles {
-  padding: 34px 20px;
+  padding: 2.125em 1.25em;
 }
 
 .blog {
@@ -150,4 +150,49 @@ footer {
   line-height: 1.25em;
 }
 
+/* Individual blog post page */
+
+.blog-post-header {
+  height: 900px;
+  color: var(--dark-text);
+  padding: 2em 1.25em 1.25em 1.25em;
+}
+
+#blog-post-img {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.blog-date {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.blog-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.09375em;
+  margin-bottom: 0.5em;
+}
+
+.blog-text {
+  line-height: 1.25em;
+}
+
+.blog-subheading {
+  font-weight: 700;
+  margin: 1.25em 0;
+}
+
+.recent-posts {
+  padding: 2.125em 1.25em;
+}
+
+.recent-posts-heading {
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.75em;
+}
 /* Media queries */
