@@ -25,6 +25,12 @@ footer {
   width: 100%;
   background-color: var(--light-text);
 }
+
+header,
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 /* Header styles */
 
 header {
@@ -48,7 +54,6 @@ header {
 /* hero section */
 
 .hero-post {
-  height: 295px;
   background-image: url(/images/blog-image-hero.png);
   background-size: cover;
   color: var(--light-text);
@@ -218,6 +223,25 @@ footer {
 
 /* Media queries */
 
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0.5em;
+    height: 5em;
+  }
+
+  .header-logo {
+    margin-bottom: 0.5em;
+  }
+
+  .nav-link {
+    margin: 0;
+    padding: 0 0.5em 0 0.5em;
+  }
+}
+
 @media (min-width: 480px) {
   /* index.html styles */
   .hero-heading,
@@ -319,19 +343,5 @@ footer {
 
   .about-me-pic {
     margin-right: 2em;
-  }
-}
-
-@media (min-width: 1201px) {
-  /* index.html styles */
-  .blog-articles {
-    grid-template-columns: repeat(6, 1fr);
-    padding: 4em 4em 2em 4em;
-  }
-
-  /* Blogpost page */
-  .recent-posts {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1.25em;
   }
 }
